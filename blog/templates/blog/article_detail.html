@@ -1,0 +1,11 @@
+<h2>{{ article.title }}</h2>
+<p>{{ article.content }}</p>
+<p><em>Автор: {{ article.author }}, опубликовано {{ article.created_on }}</em></p>
+
+<h3>Комментарии</h3>
+{% for comment in comments %}
+  <p><strong>{{ comment.author }}</strong>: {{ comment.body }} ({{ comment.created_on }})</p>
+{% empty %}
+  <p>Пока нет комментариев.</p>
+{% endfor %}
+
