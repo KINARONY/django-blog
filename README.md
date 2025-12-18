@@ -19,3 +19,4 @@ HTML
 
 что бы запустить нужно написать:
 python manage.py runserver
+
